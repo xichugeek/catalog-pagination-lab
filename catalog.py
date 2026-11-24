@@ -23,6 +23,7 @@ class CatalogPanel:
 
     def select_group(self, group):
         self.group = group
+        self.page = 1
 
     def visible(self):
         return filter_catalog(self.group, self.page)
